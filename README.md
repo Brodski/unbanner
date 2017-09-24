@@ -24,3 +24,7 @@ http://localhost:8080/
 
 to see list of students:
 http://localhost:8080/students
+
+For jacoco test:
+./gradlew clean build jacocoTestReport
+Reports found in ../build/jacocoHtml/index.html
