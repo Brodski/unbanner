@@ -36,6 +36,7 @@ public class TestDataServiceImpl implements TestDataService {
   @Override
   public void loadTestData() {
 
+    System.out.println("Testing");
     studentRepository.deleteAll();
     courseRepository.deleteAll();
     sectionRepository.deleteAll();
