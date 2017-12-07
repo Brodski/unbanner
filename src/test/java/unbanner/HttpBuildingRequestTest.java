@@ -270,7 +270,7 @@ public class HttpBuildingRequestTest {
         .with(csrf().asHeader())
         .contentType(MediaType.APPLICATION_FORM_URLENCODED))
         .andExpect(status().is3xxRedirection())
-        .andExpect(view().name("redirect:/building/" +bldList.get(0).id))
+        .andExpect(view().name("redirect:/building/"+ bldList.get(0).id))
         .andDo(print());
   }
 }
