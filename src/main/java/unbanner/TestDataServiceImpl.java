@@ -36,15 +36,14 @@ public class TestDataServiceImpl implements TestDataService {
   @Override
   public void loadTestData() {
 
-    System.out.println("Testing");
-    studentRepository.deleteAll();
-    courseRepository.deleteAll();
-    sectionRepository.deleteAll();
-    buildingRepository.deleteAll();
-    roomRepository.deleteAll();
-    professorRepository.deleteAll();
-    semesterRepository.deleteAll();
-    nineHundredRepository.deleteAll();
+//    studentRepository.deleteAll();
+ //   courseRepository.deleteAll();
+  //  sectionRepository.deleteAll();
+   // buildingRepository.deleteAll();
+//    roomRepository.deleteAll();
+ //   professorRepository.deleteAll();
+  //  semesterRepository.deleteAll();
+   // nineHundredRepository.deleteAll();
     nineHundredRepository.save(new NineHundred(9000)); //start 900 number sequence at 9000
 
     /*
