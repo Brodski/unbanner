@@ -90,7 +90,7 @@
                         th:text="${room.name}">Name</option>
             </select>
             <label>Instructor</label>
-            <select class="form-control" id="professor" name="professorID" th:field="${section.professor}">
+            <select class="form-control" id="professor" name="professorID" >
                 <option th:each="professor : ${allProfessors}"
                         th:value="${professor.id}"
                         th:text="${professor.firstName + ' ' + professor.lastName}">
