@@ -131,7 +131,8 @@ public class BuildingController {
   //Get route for create_room
   @RequestMapping(value = "/buildings/newRoom/{id}", method = RequestMethod.GET)
   public String newRoomGet(@ModelAttribute("room") Room room,
-                           @PathVariable String id, Model model) {    Building building = repository.findOne(id);
+                           @PathVariable String id, Model model) {
+    Building building = repository.findOne(id);
     if (building != null){
       model.addAttribute("building", building);
       return "create_room";
